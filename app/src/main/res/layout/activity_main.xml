@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#5C6BC0">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/primary_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_margin="10dp"
+            android:text="Primary Button"
+            android:textColor="@android:color/white"
+            fbutton:buttonColor="#EF5350"
+            fbutton:shadowEnabled="true" />
+
+
+        <info.hoang8f.widget.FButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_margin="10dp"
+            android:text="Primary Button"
+            android:textColor="@android:color/white"
+            fbutton:buttonColor="#ef50d7"
+            fbutton:shadowEnabled="true" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!--<ImageView-->
+            <!--content here/>-->
+
+        <!--<TextView-->
+            <!--content here/>-->
+
+    </LinearLayout>
+</LinearLayout>
