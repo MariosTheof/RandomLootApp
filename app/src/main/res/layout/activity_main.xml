@@ -1,21 +1,31 @@
-<FrameLayout
-    android:id="@+id/basic_button"
+<LinearLayout
+    android:id="@+id/LinearLayoutTwoCol"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fbutton="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+    android:layout_width="fill_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#5C6BC0"
+    android:paddingTop="25dp"
+    android:paddingBottom="35dp">
+
+<LinearLayout
+
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#5C6BC0"
     android:paddingTop="25dp"
     android:paddingBottom="35dp">
 
     <info.hoang8f.widget.FButton
         android:id="@+id/mundaneLoot"
-        android:layout_width="170dp"
-        android:layout_height="85dp"
-        android:layout_gravity="left|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:minHeight="@dimen/demo_button_min_height"
-        android:minWidth="@dimen/demo_button_min_width"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
         android:text="Mundane Loot"
         android:textColor="@android:color/white"
         fbutton:buttonColor="@color/fbutton_color_sun_flower"
@@ -24,40 +34,50 @@
 
     <info.hoang8f.widget.FButton
         android:id="@+id/spellbook"
-        android:layout_width="170dp"
-        android:layout_height="85dp"
-        android:layout_gravity="right|top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:minHeight="@dimen/demo_button_min_height"
-        android:minWidth="@dimen/demo_button_min_width"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
         android:text="Generate Spellbook"
         android:textColor="@android:color/white"
         fbutton:buttonColor="@color/fbutton_color_emerald"
         fbutton:shadowEnabled="true"
         android:clickable="true" />
 
+
     <info.hoang8f.widget.FButton
         android:id="@+id/cr"
-        android:layout_width="170dp"
-        android:layout_height="85dp"
-        android:layout_gravity="right|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:minHeight="@dimen/demo_button_min_height"
-        android:minWidth="@dimen/demo_button_min_width"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
         android:text="Change CR"
         android:textColor="@android:color/white"
         fbutton:buttonColor="@color/fbutton_color_wet_asphalt"
         fbutton:shadowEnabled="true"
         android:clickable="true" />
 
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5C6BC0"
+    android:paddingTop="25dp"
+    android:paddingBottom="35dp">
+
     <info.hoang8f.widget.FButton
         android:id="@+id/danger_button"
-        android:layout_width="170dp"
-        android:layout_height="85dp"
-        android:layout_gravity="left|bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:minHeight="@dimen/demo_button_min_height"
-        android:minWidth="@dimen/demo_button_min_width"
+        android:minHeight="30dp"
+        android:minWidth="0dp"
         android:text="Danger Button"
         android:textColor="@android:color/white"
         fbutton:buttonColor="@color/fbutton_color_alizarin"
@@ -66,29 +86,30 @@
 
     <info.hoang8f.widget.FButton
         android:id="@+id/disabled_button"
-        android:layout_width="170dp"
-        android:layout_height="85dp"
-        android:layout_gravity="right|bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:minHeight="@dimen/demo_button_min_height"
-        android:minWidth="@dimen/demo_button_min_width"
+        android:minHeight="30dp"
+        android:minWidth="0dp"
         android:text="Disabled Button"
         android:textColor="@android:color/white"
         android:clickable="true" />
 
     <info.hoang8f.widget.FButton
         android:id="@+id/loot"
-        android:layout_width="170dp"
-        android:layout_height="85dp"
-        android:layout_gravity="left|top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_marginTop="15dp"
-        android:minHeight="@dimen/demo_button_min_height"
-        android:minWidth="@dimen/demo_button_min_width"
+        android:minHeight="30dp"
+        android:minWidth="0dp"
         android:text="Generate Loot"
         android:textColor="@android:color/white"
         fbutton:buttonColor="@color/fbutton_color_turquoise"
         fbutton:shadowEnabled="true"
         android:clickable="true" />
 
-</FrameLayout>
+</LinearLayout>
+
+
+</LinearLayout>
