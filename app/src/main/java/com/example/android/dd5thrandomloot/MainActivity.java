@@ -8,7 +8,6 @@ import android.widget.Button;
 
 
 import java.lang.reflect.Array;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -18,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 //        populatingArray();
 
         Button b = (Button)findViewById(R.id.mundaneLoot);
+
 
         b.setOnClickListener(new View.OnClickListener(){
             @Override
