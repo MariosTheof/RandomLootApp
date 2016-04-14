@@ -7,14 +7,13 @@ import android.view.View;
 import android.widget.Button;
 
 
-import java.lang.reflect.Array;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        populatingArray();
 
         Button b = (Button)findViewById(R.id.mundaneLoot);
 
@@ -42,13 +41,7 @@ public class MainActivity extends AppCompatActivity {
 //        };
 //        messageButton.setOnClickListener(myListener);
 //    }
-    private String[] mundaneLoot = new String[3];
 
-    private void populatingArray() {
-        mundaneLoot[0] = "scrap";
-        mundaneLoot[1] = "vial of antitoxin";
-        mundaneLoot[2] = "worn whetstone";
-    }
 }
 
 
